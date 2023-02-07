@@ -1,0 +1,96 @@
+body {
+	max-width: 1200px;
+}
+.header{
+	background-color: #000000;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	width: 100%;
+	height: 80px;
+}
+.header_item > a{
+	text-decoration:none;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.header_item > a:hover {
+    background-color: #ff3f40;
+    text-decoration:none;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+}
+.name_title2 {
+	letter-spacing: 7px;
+}
+
+.contact_link > a {
+	color: #000000;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+.contact_link > a:hover {
+	background-color: #ff3f40;
+}
+
+/*Следующая част "Что мы умеем"*/
+.name-do{
+	text-transform: uppercase;
+}
+.learn_more_link{
+	text-transform: capitalize;
+}
+h3{
+	text-transform: capitalize;
+}
+.second_part {
+	border-bottom: 1px solid;
+}
+/*Следующая част "Будующий продукт"*/
+.line {
+	display: flex;
+	width: 40px;
+	border-bottom: 1px solid;
+}
+.future_item {
+	width: 250px;
+	height: 250px;
+	background-color: brown;
+	margin: 30px;
+}
+/*Следующая част "знакомство с нашей командой"*/
+
+.sub_men_name > h3{
+	text-transform: uppercase;
+}
+.team_link > a {
+	text-decoration: none;
+}
+/*Следующая част "Подписка"*/
+.subscribe_name {
+	text-transform: none;
+}
+/*Следующая част "Оставаться на связи"*/
+
+
+/*Foorer*/
+.footer {
+	flex: 0 0 auto;
+	background-color: black;
+	color: #ffffff;
+	justify-self: space-between;
+}
+.footer_in {
+	display: flex;
+	justify-self: space-between;
+}
+
+
+
+
+
+
+
