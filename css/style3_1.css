@@ -1,22 +1,34 @@
-body {
-	max-width: 1200px;
+body{
+	max-width: 1597px;
+	background-cozlor: #e0e0e0;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	}
+.list {
+	max-width: 1249px;
+	margin: auto;
 }
-.header{
-	background-color: #000000;
-	justify-content: center;
-	align-items: center;
+
+
+.nav{
 	display: flex;
-	width: 100%;
-	height: 80px;
+	margin: auto;
+	margin-top: 29px;
+	justify-content: center;
+	max-width: 1249px;
+	height: 89px;
+	background-color: #313030;
 }
-.header_item > a{
+.nav a{
+	padding: 35px;
 	text-decoration:none;
 	color: #FFFFFF;
 	text-transform: uppercase;
 }
-.header_item > a:hover {
-    background-color: #ff3f40;
-    text-decoration:none;
+.nav a:hover {
+    background-color:#FF2D2D;
+}
+.nav a:nth-of-type(3){
+	min-width: 80px;
 }
 
 h1, h2 {
@@ -32,11 +44,101 @@ h1, h2 {
 	text-decoration: none;
 }
 
-.contact_link > a:hover {
-	background-color: #ff3f40;
+.first_part_left a {
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	width: 227px;
+	height: 55px;
+	text-decoration:none;
+	color: #FFFFFF;
+	background-color:#FF2D2D;
+	border-radius: 5px;
+	border: none;
 }
 
-/*Следующая част "Что мы умеем"*/
+.first_part_left a:hover {
+	background-color:#ff0000
+}
+
+.image img{
+	
+	width: 100%;
+    height: auto;
+	max-width: 551px
+}
+
+/*Первая часть "Контакт"*/
+
+/*.fon{
+	display: block;
+	position: relative;
+	top: px;
+	height: 688px;
+	z-index: -1;
+	background-color: #e0e0e0;
+}*/
+.first_part {
+	display: flex;
+	justify-content: space-between;
+	flex-direction:row;
+	flex-wrap: wrap;
+	margin-top: 103px;
+
+}
+.first_part_left{
+	max-width: 554px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.first_part_left p{
+    margin-bottom: 63px;
+    margin-top: 35px;
+}
+.contact_link {
+    text-decoration: none;
+    color: #d11414;
+	border: none;
+}
+h1 {
+	font-size: 50px;
+	margin-top: -10px;
+    margin-bottom: 0px;
+}
+/*Следующая вторая часть "Что мы умеем"*/
+.second_part{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 107px;
+}
+.second_part_left{
+display: block;
+}
+
+.second_part h2,.second_part p, a{
+	max-width: 554px;
+    margin-top: 0px;
+}
+
+.second_part  a{
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	width: 227px;
+	height: 55px;
+	text-decoration:none;
+	color: #FF2D2D;
+	background-color:#FFFFFF;
+	border-style: solid;
+	color: #FF2D2D;
+	border-radius: 5px;
+}
+
+.second_part a:hover {
+	background-color:#ffeeee
+}
+
 .name-do{
 	text-transform: uppercase;
 }
@@ -46,46 +148,308 @@ h1, h2 {
 h3{
 	text-transform: capitalize;
 }
-.second_part {
-	border-bottom: 1px solid;
+.provide_item{
+	display: block;
 }
-/*Следующая част "Будующий продукт"*/
+.provide_item_1::before{
+	 content: url('../images/15719.png');
+}
+.provide_item_2::before{
+	 content: url('../images/15722.png');
+}
+.provide_item_3::before{
+	 content: url('../images/15729.png');
+}
+.provide_item_4::before{
+	 content: url('../images/15734.png');
+}
+
+.provide_item_1, .provide_item_2, .provide_item_3, .provide_item_4 {
+width: 48%;
+}
+.provide_item{
+	display: flex;
+	justify-content: space-between;
+	max-width: 554px;
+	flex-wrap: wrap;	
+
+}
+/*Следующая част 3 "Будующий продукт"*/
+
+.feature_products{
+display: inline-block;
+}
+
+.feature_products_name > p, .feature_products_name h2{
+	text-align: center;
+}
+
 .line {
 	display: flex;
 	width: 40px;
+	margin: auto;
 	border-bottom: 1px solid;
+	color: #FF2D2D;
 }
+
+.main_future_item{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.nav_produkt{
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.nav_produkt a{
+	padding: 30px 20px 30px 20px;
+	min-width: 130px;
+	text-decoration:none;
+	color:#000;
+	text-transform: uppercase;
+}	
+.nav_produkt :first-child{
+	min-width: 30px;
+}
+.nav_produkt a:hover {
+    color: #FF2D2D;
+}
+.main_future_item{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
 .future_item {
-	width: 250px;
-	height: 250px;
-	background-color: brown;
-	margin: 30px;
+	display: block;
+	min-width: 290px;
+	min-height: 290px;
+	background-color: #5281FF;
+	margin: 10px;
 }
-/*Следующая част "знакомство с нашей командой"*/
+/*Следующая част четвертая "знакомство с нашей командой"*/
+
+.meet_our_team{
+	display: block;
+}
+.meet_team{
+	display: flex;
+	flex-direction: column;
+	justify-items: flex-start;
+	width: 49%;
+}
+.meet_our_team .line {
+	margin: inherit;
+	margin: 0px;
+	margin-bottom: 37px;
+}
+.sup_men .future_item{
+	background-color: #FF2D2D;
+	height: 435px;
+	margin-left: 0px;
+}
+.sup_men{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+.sub_men{
+	display: flex;
+	max-width: 900px;
+}
+.sub_men div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.sub_men_item{
+	flex-direction: column;
+}
 
 .sub_men_name > h3{
 	text-transform: uppercase;
 }
+.team_link{
+	align-self: flex-start;
+}
 .team_link > a {
 	text-decoration: none;
+	color: #000000;
+	font-style: italic;
+	padding-right: 50px;
+	text-transform: capitalize;
+}
+.sup_men_img{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.sup_men_item{
+	width: 200px;
+	height: 217px;
+	background-color: #FF2D2D;
+	margin: 10px;
 }
 /*Следующая част "Подписка"*/
+.subscribe_wrapper{
+	display: flex;
+	flex-direction: column;
+
+}
+.subscribe_path{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: #313030;
+	color: #FFFFFF;
+	padding: 75px 0 75px 0;
+}
+.subscribe_path h2{
+	margin: auto;
+}
 .subscribe_name {
 	text-transform: none;
 }
-/*Следующая част "Оставаться на связи"*/
 
-
-/*Foorer*/
-.footer {
-	flex: 0 0 auto;
-	background-color: black;
-	color: #ffffff;
-	justify-self: space-between;
-}
-.footer_in {
+.email_item{
 	display: flex;
-	justify-self: space-between;
+	justify-content: center;
+	align-content: center;
+	column-gap: 20px;
+	padding-top: 25px;
+}
+.email_adress{
+	display: flex;
+	width: 524px;
+	height: 75px;
+	border-radius: 5px;
+	font-size: 1.17em;
+
+}
+.subscribe_adress{
+	width: 217px;
+	height: 79px;
+	color: #ffffff;
+	background-color: #FF2D2D;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 1.17em;
+    font-weight: bold;
+	border: none;
+}
+.subscribe_adress:hover {
+	background-color:#ff0000
+}
+/*Следующая част "Оставаться на связи"*/
+.get_touch{
+	display: flex;
+    flex-direction: column;
+	max-width: 1249px;
+	margin: auto;
+}
+.get_touch_head {
+	display: inline-block;
+	max-width: 752px;
+}
+.get_touch .line {
+	margin: 0px;
+	margin-bottom: 37px;
+}
+
+.send {
+	display: flex;
+	justify-content: flex-end;
+}
+.send_wrapper{
+	display: flex;
+	justify-content: space-between;
+	width: 1423px;
+	padding: 10px 0 112px 0;
+}
+.send-massage {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.massage{
+	width: 734px;
+	height: 252px;
+	color: #ffffff;
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	font-size: 1.17em;
+	border: none;
+	margin: 21px;
+}
+.name, .email{
+	width: 342px;
+	height: 71px;
+	color: #ffffff;
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	font-size: 1.17em;
+	border: none;
+	margin: 21px;
+}
+.send-massage-button{
+	width: 731px;
+	height: 75px;
+	color: #ffffff;
+	background-color: #FF2D2D;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 1.17em;
+    text-transform: uppercase;
+	border: none;
+	margin: 20px;
+	font-weight: bold;
+}
+.send-massage-button:hover{
+	background-color:#ff0000
+}
+.contact_info{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	background-color: #313030;
+	color: #FFFFFF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 81px;
+	
+}
+.contact_info_wrapper{
+}
+/*Foorer*/
+.footer_path {
+	display: flex;
+	max-width: 1597px;
+	height: 89px;
+	flex: 0 0 auto;
+	background-color: #313030;
+	justify-content: center;
+}
+.footer_wrapper{
+	display: flex;
+	width: 1249px;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer_left {
+	display: flex;
+	color: #B8B8B8;
+}
+.footer_right {
+	display: inline-block;
+	height: 40px;
+}
+.responsive {
+    width: 40px;
+    height: auto;
+	margin-left: 20px;
 }
 
 
