@@ -374,14 +374,15 @@ justify-content: space-between;
 }
 
 .massage{
-	width: 734px;
+	width: 728px;
 	height: 252px;
 	color: #ffffff;
 	background-color: #e0e0e0;
 	border-radius: 5px;
 	font-size: 1.17em;
 	border: none;
-	margin: 21px;
+	margin: none;
+	margin-left: 0px;
 }
 .name, .email{
 	width: 342px;
@@ -394,7 +395,7 @@ justify-content: space-between;
 	margin: 21px;
 }
 .send-massage-button{
-	width: 731px;
+	width: 734px;
 	height: 75px;
 	color: #ffffff;
 	background-color: #FF2D2D;
@@ -403,8 +404,9 @@ justify-content: space-between;
 	font-size: 1.17em;
     text-transform: uppercase;
 	border: none;
-	margin: 20px;
+	margin-top: 21px;
 	font-weight: bold;
+	margin-left: 0px;
 }
 .send-massage-button:hover{
 	background-color:#ff0000
@@ -449,12 +451,87 @@ justify-content: space-between;
 .responsive {
     width: 40px;
     height: auto;
-	margin-left: 20px;
+	margin-right: 20px;
 }
+/*медиа запрос*/
+@media screen and (max-width: 1240px) {
+	.main_future_item {
+		justify-content: center;
+	}
+	.sup_men {
+		justify-content: center;
+	}
+}	
 
+@media screen and (max-width: 1170px) {
+	.first_part, .second_part, .meet_team, .send-massage, .sub_men div  {
+		justify-content: center;
+	}
+	.send_wrapper {
+	flex-direction: column;
+	}
+	.get_touch{align-items: center}
+	.contact_info {
+		justify-content: flex-end;
+		padding-left: 0px;
+		margin-right: 20px;
+	} 
+	.meet_team{
+		align-items: center;
+		width: 100%;
+	}
+}	
 
+@media screen and (max-width: 890px) {
+	.sup_men_img {
+		max-width: 450px;
+		align-self: center;
+	}
+	.team_link {
+		align-self: center;
+	}
+}	
+@media screen and (max-width: 820px) {
+	.email_adress {
+		width: 217px;
+	}
+	.email {
+		width: 342px;
+	}
+	.massage {
+		width: 342px;
+	}
+	.send-massage-button {
+		width: 342px
+	}
+}	
 
-
-
-
-
+@media screen and (max-width: 560px) {
+	.provide_item {
+		align-content: center;
+		flex-direction: column;
+	}
+	.nav a {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.nav_produkt a {
+		min-width: none;
+	}
+	.email_item {
+		flex-direction: column;
+		align-items: center;
+		row-gap: 20px;
+		column-gap: 0px;
+	}
+	.footer_left {
+		width: 200px;
+	}
+	h1 {
+		font-size: 30px;
+}	
+@media screen and (max-width: 400px) {
+	.email, .name, .massage, .send-massage-button {
+		width: 270px;
+	}
+}
