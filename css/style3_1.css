@@ -385,7 +385,7 @@ justify-content: space-between;
 	margin-left: 0px;
 }
 .name, .email{
-	width: 342px;
+	width: 351px;
 	height: 71px;
 	color: #ffffff;
 	background-color: #e0e0e0;
@@ -393,6 +393,10 @@ justify-content: space-between;
 	font-size: 1.17em;
 	border: none;
 	margin: 21px;
+	margin-left: 0px;
+}
+.email{
+	margin-right: 0px;
 }
 .send-massage-button{
 	width: 734px;
@@ -467,6 +471,8 @@ justify-content: space-between;
 	.first_part, .second_part, .meet_team, .send-massage, .sub_men div  {
 		justify-content: center;
 	}
+
+	}
 	.send_wrapper {
 	flex-direction: column;
 	}
@@ -495,14 +501,15 @@ justify-content: space-between;
 	.email_adress {
 		width: 217px;
 	}
-	.email {
+	.email, .name, .massage, .send-massage-button {
 		width: 342px;
 	}
-	.massage {
-		width: 342px;
+	.send-massage{
+		flex-direction: column;
+		align-content: center;
 	}
-	.send-massage-button {
-		width: 342px
+	.name{
+		margin-right: 0px;
 	}
 }	
 

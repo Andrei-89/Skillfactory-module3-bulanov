@@ -6,7 +6,9 @@
 	<link rel="stylesheet" href="css/style3_1.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">	<title>Progect3</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">	
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+	<title>Progect3</title>
 </head>
 <body>
 	<header>
@@ -17,10 +19,13 @@
 			<a href="">contact</a>
 		</div>
 	</header>
-	<main>
+	<main id="app">
 		<div class="list">
 		<div class="first_part">
 			<div class="first_part_left">
+				<div id="app">
+  					{{ message }}
+					</div>
 				<h1> our strong <br><span class="name_title2">organisation</span></h1>
 				<p>Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э. на латинском языке, обнаружение сходства приписывается Ричарду Макклинтоку</p>
 				<h3><a href="">contact us</a></h3>
@@ -126,8 +131,8 @@
 				<div class="email_item">
 					<form class="adress" method="GET">
 						<input type="emal" class="email_adress" name="email" placeholder="    Email Adress...">
-					</form>
 					<button type="submit" class="subscribe_adress" id="subscribe_adress"><span class="subscribe_adress_bottom">subscribe</span></buttom>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -142,11 +147,10 @@
 				<div class="send-massage">
 					<form method="GET"></form>
 					<input class="name" type="name" placeholder="    Name" id="name">
-					<form  method="GET"></form>
 					<input class="email" type="email" placeholder="    Your mail" id="email">
-					<form  method="GET"></form>
 					<input class="massage" type="massage" placeholder="    Type your massage" id="massage">
 					<button type="submit" class="send-massage-button" id="name" id="email" id="massage">send massage</button>
+					</form>
 				</div>
 				<div class="contact_info">
 					<div class="contact_info_wrapper"><p><span class="name-do">contact info</span></p>
@@ -172,5 +176,13 @@
 		</div>
 	</footer>
 	<div class="fon"></div>
+	 <script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+			message: 'Привет, Vue!'
+			}
+		})
+	 </script>
 </body>
 </html>
